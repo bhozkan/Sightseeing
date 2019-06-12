@@ -9,7 +9,7 @@ namespace Entitiy
     public class Activity
     {
         public int ActivityId { get; set; }
-        public int refActivityId { get; set; }
+        public int refCategoryId { get; set; }
         public string ActivityName { get; set; }
         public string ActivityDescryption { get; set; }
 

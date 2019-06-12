@@ -103,7 +103,7 @@ namespace DataAccessLayer
             modelBuilder.Entity<Category>()
                 .HasMany(x => x.Activities)
                 .WithRequired(x => x.Category)
-                .HasForeignKey(x => x.refActivityId);
+                .HasForeignKey(x => x.refCategoryId);
 
             #endregion
 

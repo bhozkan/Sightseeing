@@ -173,6 +173,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ActivitiesController.cs" />
+    <Compile Include="Controllers\ActivitiyController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -285,6 +287,11 @@
     <Content Include="Views\Category\Details.cshtml" />
     <Content Include="Views\Category\Edit.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="Views\Activitiy\Create.cshtml" />
+    <Content Include="Views\Activitiy\Delete.cshtml" />
+    <Content Include="Views\Activitiy\Details.cshtml" />
+    <Content Include="Views\Activitiy\Edit.cshtml" />
+    <Content Include="Views\Activitiy\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
