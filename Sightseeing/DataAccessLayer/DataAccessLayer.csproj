@@ -79,6 +79,14 @@
     <Compile Include="Migrations\201906121819181_InitialCreate.Designer.cs">
       <DependentUpon>201906121819181_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906122249146_EntityChanges.cs" />
+    <Compile Include="Migrations\201906122249146_EntityChanges.Designer.cs">
+      <DependentUpon>201906122249146_EntityChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906122308408_EntityChangesV2.cs" />
+    <Compile Include="Migrations\201906122308408_EntityChangesV2.Designer.cs">
+      <DependentUpon>201906122308408_EntityChangesV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SightseeingContext.cs" />
@@ -96,6 +104,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906121819181_InitialCreate.resx">
       <DependentUpon>201906121819181_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906122249146_EntityChanges.resx">
+      <DependentUpon>201906122249146_EntityChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906122308408_EntityChangesV2.resx">
+      <DependentUpon>201906122308408_EntityChangesV2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

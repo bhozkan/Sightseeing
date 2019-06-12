@@ -46,8 +46,6 @@ namespace DataAccessLayer
             modelBuilder.Entity<ActivityExtension>()
                 .HasKey(x => x.ActivityExtensionId);
 
-
-
             #endregion
 
             #region PropertyOpts
@@ -75,6 +73,9 @@ namespace DataAccessLayer
                .HasMaxLength(50)
                .HasColumnType("nvarchar");
 
+            modelBuilder.Entity<ToDoList>()
+                .Property(x => x.IsDone)
+                .HasColumnAnnotation("Default", false);
 
 
             #endregion
