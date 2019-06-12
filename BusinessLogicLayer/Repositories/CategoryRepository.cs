@@ -2,47 +2,50 @@
 using Entitiy;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+
+
+
+
+
 
 namespace BusinessLogicLayer.Repositories
 {
     public class CategoryRepository
     {
 
-        protected readonly SightseeingContext context;
+        public SightseeingContext _context;
 
         public CategoryRepository(SightseeingContext ctx)
         {
-            context = ctx;
+            _context = ctx;
         }
 
-        public List<Category> GetAll()
+        public List<Category> GetAllCategories()
         {
-            return context.Categories.ToList();
+            return _context.Categories.ToList();
         }
 
-        public Category FindByCategoryId(int id)
+        public Category FindByCategoryId(int? id)
         {
-            return context.Categories.Find(id);
+            return _context.Categories.Find(id);
         }
 
-        public void AddCategory(Category category)
+        public void CreateCategory(Category category)
         {
-            context.Categories.Add(category);
+            _context.Categories.Add(category);
         }
 
-        public void DeleteCategory(int id)
+        public void DeleteCategory(Category category)
         {
-           Category deletedCat = FindByCategoryId(id);
-           context.Categories.Remove(deletedCat);
+           _context.Categories.Remove(category);
         }
 
-        public void  UpdateCategory(Category updatedCategory)
+        public void EditCategory(Category category)
         {
-            var categoryOld = FindByCategoryId(updatedCategory.CategoryId);
-            
+            _context.Entry(category).State = EntityState.Modified;
         }
 
 
