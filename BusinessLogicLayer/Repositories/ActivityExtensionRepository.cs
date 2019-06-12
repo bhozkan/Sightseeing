@@ -8,5 +8,6 @@ namespace BusinessLogicLayer.Repositories
 {
     public class ActivityExtensionRepository
     {
+
     }
 }
