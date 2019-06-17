@@ -20,7 +20,10 @@ namespace Sightseeing.Controllers
         {
             return View(_uow._activityRepository.GetAllActivities());
         }
-
+        public ActivitiyController()
+        {
+            ViewBag.ActivitiySelected = "selected";
+        }
         // GET: Activitiy/Details/5
         public ActionResult Details(int? id)
         {

@@ -12,7 +12,10 @@ namespace Sightseeing.Controllers
         {
             return View();
         }
-
+        public HomeController()
+        {
+            ViewBag.HomeSelected = "selected";
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

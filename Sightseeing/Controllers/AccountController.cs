@@ -21,6 +21,7 @@ namespace Sightseeing.Controllers
 
         public AccountController()
         {
+            ViewBag.AccountSelected = "selected";
         }
 
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )

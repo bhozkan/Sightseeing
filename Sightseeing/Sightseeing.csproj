@@ -293,6 +293,8 @@
     <Content Include="Views\Activitiy\Index.cshtml" />
     <Content Include="Views\ToDoList\Index.cshtml" />
     <Content Include="Views\ToDoList\Create.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

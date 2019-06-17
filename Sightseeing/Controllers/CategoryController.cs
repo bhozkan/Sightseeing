@@ -14,11 +14,17 @@ namespace Sightseeing.Controllers
     public class CategoryController : Controller
     {
         UnitOfWork _uow = new UnitOfWork();
-       
+
         // GET: Category
+
+        public CategoryController()
+        {
+            ViewBag.CategorySelected = "selected";
+        }
         public ActionResult Index()
         {
-            return View(_uow._categoryRepository.GetAllCategories());
+            List<Category> listCategories = _uow._categoryRepository.GetAllCategories();
+            return View(listCategories);
         }
 
         // GET: Category/Details/5

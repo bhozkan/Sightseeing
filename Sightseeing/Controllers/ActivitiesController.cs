@@ -21,7 +21,10 @@ namespace Sightseeing.Controllers
             var activities = db.Activities.Include(a => a.Category);
             return View(activities.ToList());
         }
-
+        public ActivitiesController()
+        {
+            ViewBag.ActivitiesSelected = "selected";
+        }
         // GET: Activities/Details/5
         public ActionResult Details(int? id)
         {
